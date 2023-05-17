@@ -41,7 +41,7 @@ body {
     width: 360px;
     height: 230px;
     margin: 0 auto;
-    background: grey;
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(0,140,177,1) 35%, rgba(0,29,125,1) 100%);
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 15px;
 }
@@ -55,12 +55,17 @@ body {
     transform: rotate(90deg);
 }
 
-.chip{
-    height: 55px;
+.bank-img{
+    width: 100px;
     position: relative;
-    left: 87%;
+    left: 55%;
+}
+
+.chip{
+    height: 75px;
+    position: relative;
+    left: 75%;
     bottom: 20px;
-    transform: rotate(90deg);
 }
 
 .card-number{
