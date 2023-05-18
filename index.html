@@ -14,7 +14,7 @@
                 <form id="credit-card">
                     <div class="number-container">
                         <label>Card Number</label>
-                        <input type="tel" name="card-number" 
+                        <input type="text" name="card-number" 
                         id="card-number" maxlength="19" placeholder="1234 5678 5555 5555"
                         required>
                     </div>
@@ -26,20 +26,27 @@
                     </div>
                     <div class="bank-container">
                         <label>БАНК</label>
-                        <input type="text" name="bank-text" 
-                        id="bank-text" maxlength="30" placeholder="СБЕР"
-                        required>
+                        <select name="bank-text" 
+                        id="bank-text" required>
+                            <option value="">-- Выберите БАНК --</option>
+                            <option value="sber">СБЕР</option>
+                            <option value="vtb">ВТБ</option>
+                            <option value="tinkoff">Тинькофф</option>
+                        </select>
                     </div>
                     <div class="payment-container">
                         <label>ПЛАТЕЖНАЯ СИСТЕМА</label>
-                        <input type="text" name="payment-text" 
-                        id="payment-text" maxlength="15" placeholder="VISA"
-                        required>
+                        <select name="payment-text" 
+                        id="payment-text" required>
+                            <option value="">--  --</option>
+                            <option value="visa">VISA</option>
+                            <option value="mastercard">MASTERCARD</option>
+                        </select>
                     </div>
                     <div class="infos-container">
                         <div class="expiration-container">
                             <label>Действительна до</label>
-                            <input type="date" name="valid-thru-text" 
+                            <input type="text" name="valid-thru-text" 
                             id="valid-thru-text" maxlength="5" placeholder="02/40"
                             required>
                         </div>
@@ -57,7 +64,7 @@
                 <div class="card">
                     <div class="intern">
                         <!-- <img class="approximation" src="img/approx.png" alt="approximation"> -->
-                        <div class="bank-img">
+                        <div class="bank-img-container">
                             <!-- <img src="img/tinkoff1.png" class="bank-img" alt="sber"> -->
                         </div>
                         <div class="card-number">
@@ -75,13 +82,18 @@
                                 <div class="cvv-vl">123</div>
                             </div>
                         </div>
-                        <div class="chip">
+                        <div class="chip-container">
                         <!-- <img class="chip" src="img/mc.png" alt="chip"> -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="table-container">
+            <table class="info-table">
+
+            </table>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>

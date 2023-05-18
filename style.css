@@ -56,16 +56,15 @@ body {
 }
 
 .bank-img{
-    width: 100px;
+    width: 90px;
     position: relative;
     left: 55%;
 }
 
 .chip{
-    height: 75px;
+    width: 65px;
     position: relative;
-    left: 75%;
-    bottom: 20px;
+    left: 65%;
 }
 
 .card-number{
@@ -108,7 +107,7 @@ body {
     width: 50%;
 }
 
-input {
+input, select {
     border: 0;
     border-radius: 5px;
     padding: 10px;
@@ -118,6 +117,24 @@ input {
     font-size: 1.1rem;
     outline: 0;
     width: 90%;
+    text-transform: uppercase;
+}
+
+.info-table td{
+    padding: 10px;
+    border: 1px solid #fff;
+    color: aliceblue;
+    background-color: #333333;
+}
+
+.table-container{
+    box-shadow: 0 0 10px 0 rgba(149, 184, 209, .5);
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10%;
+    background-color: rgb(0, 0, 0);
+
 }
 
 @media (max-width:1024px){
