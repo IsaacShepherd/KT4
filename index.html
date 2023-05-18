@@ -14,7 +14,7 @@
                 <form id="credit-card">
                     <div class="number-container">
                         <label>Card Number</label>
-                        <input type="text" name="card-number" 
+                        <input type="tel" name="card-number" 
                         id="card-number" maxlength="19" placeholder="1234 5678 5555 5555"
                         required>
                     </div>
@@ -39,13 +39,13 @@
                     <div class="infos-container">
                         <div class="expiration-container">
                             <label>Действительна до</label>
-                            <input type="text" name="valid-thru-text" 
+                            <input type="date" name="valid-thru-text" 
                             id="valid-thru-text" maxlength="5" placeholder="02/40"
                             required>
                         </div>
                         <div class="cvv-container">
                             <label>CVV</label>
-                            <input type="text" name="cvv-text" 
+                            <input type="tel" name="cvv-text" 
                             id="cvv-text" maxlength="3" placeholder="123"
                             required>
                         </div>
@@ -58,7 +58,7 @@
                     <div class="intern">
                         <!-- <img class="approximation" src="img/approx.png" alt="approximation"> -->
                         <div class="bank-img">
-                            <img src="img/tinkoff1.png" class="bank-img" alt="sber">
+                            <!-- <img src="img/tinkoff1.png" class="bank-img" alt="sber"> -->
                         </div>
                         <div class="card-number">
                             <div class="number-vl">1234 5678 5555 5555</div>
@@ -75,7 +75,9 @@
                                 <div class="cvv-vl">123</div>
                             </div>
                         </div>
-                        <img class="chip" src="img/mc.png" alt="chip">
+                        <div class="chip">
+                        <!-- <img class="chip" src="img/mc.png" alt="chip"> -->
+                        </div>
                     </div>
                 </div>
             </div>
